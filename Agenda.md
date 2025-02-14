@@ -312,7 +312,6 @@
 ## Feb 14
 
 - **Today**
-  - [ ] **Lab 4 Solution**
   - [ ] 🗝️ **Understanding Types** - The *key* to coding with confidence!
 
     ```js
@@ -348,6 +347,7 @@
 ## Feb 25 (W07)
 
 - **Today**
+  - [ ] **Lab 4 Solution**
   - [ ] Continue/Complete Looping and Array Demos - *(to be done over several classes)*
     - *(See starter Kit [`~/src/015/`](./src/015/ReadMe.md))*
     - *(See starter Kit [`~/src/016/`](./src/016/ReadMe.md))*
