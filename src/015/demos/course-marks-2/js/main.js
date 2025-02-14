@@ -66,15 +66,43 @@ const createForms = function (evt) {
   const elements = evt.target.elements;
   const inputCategory = elements.category;
   const inputQuantity = elements.quantity;
-  outputLine(`Create ${inputQuantity.value} forms for '${inputCategory.value}' items`, true);
 
-  // debugger; // Comment this out when not in use
-  let section = document.getElementById('evaluations');
-  let quantity = parseInt(inputQuantity.value);
-  let evalName = inputCategory.value;
-  for(let count = 1; count <= quantity; count++) {
-    let html = buildFormHtml(`${evalName} ${count}`);
-    section.innerHTML += html;
+  let valid = true;
+  let feedback = '';
+  if(inputCategory.value.trim() === '') {
+    valid = false;
+    feedback += 'You must supply a category name\n';
+    inputCategory.ariaInvalid = true;
+  } else {
+    inputCategory.ariaInvalid = false;
+  }
+  // Student TODO: Make sure the quantity is a whole number greater than zero and less than 10.
+  let quantity = parseFloat(inputQuantity.value);
+  if(quantity <= 0 || quantity >= 10) {
+    valid = false;
+    feedback += 'Quantity must be a whole number greater than zero and less than 10';
+    inputQuantity.ariaInvalid = true;
+  } else if (quantity !== Math.floor(quantity)) {
+    valid = false;
+    feedback += 'Quantity must be a whole number';
+    inputQuantity.ariaInvalid = true;
+  } else {
+    inputQuantity.ariaInvalid = false;
+  }
+
+  if(valid) {
+    outputLine(`Create ${inputQuantity.value} forms for '${inputCategory.value}' items`, true);
+
+    // debugger; // Comment this out when not in use
+    let section = document.getElementById('evaluations');
+    let quantity = parseInt(inputQuantity.value);
+    let evalName = inputCategory.value;
+    for(let count = 1; count <= quantity; count++) {
+      let html = buildFormHtml(`${evalName} ${count}`);
+      section.innerHTML += html;
+    }
+  } else {
+    outputLine(feedback, true);
   }
 }
 
