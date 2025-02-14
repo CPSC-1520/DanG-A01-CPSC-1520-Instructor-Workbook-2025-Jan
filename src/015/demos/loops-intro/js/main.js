@@ -3,6 +3,7 @@ let outputDiv = document.querySelector('div');
 let list = '<h2>While Loop</h2>';
 let count = 0; // count the number of list item
 
+// debugger;
 // Demo 1 - While Loop
 list += '<ul>';
 while (count < 7) { // true enter the loop
