@@ -2,7 +2,7 @@
 
 > ***NOTE:** This agenda is copied from the previous term and needs to be adjusted to this semester. Otherwise, the topics are generally in the correct order.*
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#feb-11-w06).
+> These are my notes on what I plan to teach in each [**upcoming class**](#mar-04-w08).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -377,6 +377,8 @@
 ## Mar 04 (W08)
 
 - **Today**
+  - [ ] [`about-objects.js`](./src/017/about-objects.js)
+  - [ ] [`about-object-constructors.js`](./src/017/about-object-constructors.js)
 - **Homework**
 
 
