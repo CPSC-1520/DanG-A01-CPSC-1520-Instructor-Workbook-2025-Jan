@@ -418,6 +418,12 @@
 
 - **Today**
   - [ ] Ad-Hoc Demo - Fetch, CSS Packages, and DOM API
+    - Starter Kit *(installs to [`~/src/017/more-modern`](./src/017/more-modern/ReadMe.md))*
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force CPSC-1520/DanG-A01-CPSC-1520-Instructor-Workbook-2025-Jan/sk/017/more-modern ./src/017/more-modern
+      ```
+
     - [ ] Using Fetch for non-JSON requests (see [issue #4](https://github.com/CPSC-1520/DanG-A05-CPSC-1520-Instructor-Workbook-2025-Jan/issues/4))
     - [ ] Dyamically adding CSS as a Node package (`pnpm add @picocss/pico` with `import "@picocss/pico/css/pico.css";`
     - [ ] DOM API for fine-grained control of creating and arranging DOM elements
