@@ -2,7 +2,7 @@
 
 > ***NOTE:** This agenda is copied from the previous term and needs to be adjusted to this semester. Otherwise, the topics are generally in the correct order.*
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#mar-05).
+> These are my notes on what I plan to teach in each [**upcoming class**](#mar-11-w09).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -417,7 +417,46 @@
 ## Mar 11 (W09)
 
 - **Today**
+  - [ ] Ad-Hoc Demo - Fetch, CSS Packages, and DOM API
+    - [ ] Using Fetch for non-JSON requests (see [issue #4](https://github.com/CPSC-1520/DanG-A05-CPSC-1520-Instructor-Workbook-2025-Jan/issues/4))
+    - [ ] Dyamically adding CSS as a Node package (`pnpm add @picocss/pico` with `import "@picocss/pico/css/pico.css";`
+    - [ ] DOM API for fine-grained control of creating and arranging DOM elements
+      - [ ] `document.createElement()`
+      - [ ] `document.createTextNode()`
+      - [ ] `document.appendChild()`
+    - [ ] Recall from lesson 008 about how to programmatically open and close a `<dialog>` element
+
+        ```html
+        <dialog>
+          <h3>Greetings, one and all!</h3>
+          <p>I am the (fairly new) <code>&lt;dialog&gt;</code> element. I have been triggered by your mouse moving out of the image on this page.</p>
+          <p>You can click the button below to close this dialog, or press the <kbd>Esc</kbd> key on your keyboard.</p>
+          <form method="dialog">
+            <button>OK</button>
+          </form>
+        </dialog>
+        ```
+
+        ```js
+        Let's listen for the dialog's close event.
+        //    Learn more about this close event here:
+        //      https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#events
+        let myDialog = document.querySelector('dialog');
+        myDialog.addEventListener('close', function () {
+            console.log('dialog closed');
+            featureImage.classList.remove('image-blur');
+        });
+        ```
+
+  - [ ] Setup the [Student Marks example/tutorial](./sk/020/Tutorial.md)
+    - Starter Kit *(installs to [`~/src/020/student-marks`](./src/020/student-marks/ReadMe.md))*
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force CPSC-1520/DanG-A01-CPSC-1520-Instructor-Workbook-2025-Jan/sk/020/student-marks ./src/020/student-marks
+      ```
+
 - **Homework**
+  - [ ] Fill the `courses.json` file with your current marks
 
 
 ## Mar 12
