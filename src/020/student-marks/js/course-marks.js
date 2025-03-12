@@ -4,6 +4,38 @@
  * @param {string} name The course name (e.g.: 'JavaScript Fundamentals')
  */
 const Course = function(code, name) {
+    this.code = code;
+    this.name = name;
+    this.evaluations = [];
+
+    this.getTotalWeight = function() {
+        let total = 0;
+        for(let index = 0; index < this.evaluations.length; index++) {
+            let item = this.evaluations[index];
+            total += item.weight;
+        }
+        return total;
+    }
+
+    this.getTotalEarned = function() {
+        let total = 0;
+        let marked = this.evaluations.filter(x => x.getWeightedPercent() !== null);
+        for(let index = 0; index < marked.length; index ++) {
+            total += marked[index].getWeightedPercent();
+        }
+        return total;
+    }
+
+    this.getTotalUnmarked = function() {
+        let unmarked = this.evaluations.filter(x => x.getWeightedPercent() === null);
+        // The .reduce() function of arrays allow you to produce a single aggregate value from the entire array
+        let total = unmarked.reduce(
+            // Callback
+            (sum, item) => sum += item.weight,
+            // Initial value
+            0);
+        return total;
+    }
 }
 
 /**
