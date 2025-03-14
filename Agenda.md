@@ -468,12 +468,14 @@
 ## Mar 12
 
 - **Today** *(Online)*
+  - [ ] Begin the [Student Marks example/tutorial](./src/020/Tutorial.md)
 - **Homework**
 
 
 ## Mar 14
 
 - **Today**
+  - [ ] Continue the [Student Marks example/tutorial](./src/020/Tutorial.md)
 - **Homework**
 
 ----
@@ -481,18 +483,22 @@
 ## Mar 18 (W10)
 
 - **Today**
+  - [ ] Continue the [Student Marks example/tutorial](./src/020/Tutorial.md)
 - **Homework**
 
 
 ## Mar 19
 
 - **Today** *(Online)*
+  - [ ] Complete the [Student Marks example/tutorial](./src/020/Tutorial.md)
+  - [ ] Using `async` and `await` with the Fetch API
 - **Homework**
 
 
 ## Mar 21
 
 - **Today**
+  - [ ] Timers and Intervals in JavaScript
 - **Homework**
 
 ----
@@ -500,6 +506,7 @@
 ## Mar 25 (W11)
 
 - **Today**
+  - [ ] Classes in JavaScript
 - **Homework**
 
 
