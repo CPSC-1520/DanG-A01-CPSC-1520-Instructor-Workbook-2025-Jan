@@ -17,6 +17,7 @@
         </template>
     ```
 */
+import { Course } from './course-marks';
 
 const populateCourseContent = function(courseData) {
     // get the container for our output
@@ -27,13 +28,27 @@ const populateCourseContent = function(courseData) {
     let template = document.getElementById('course-shell').content;
 
     courseData.forEach(item => {
+        item = Course.fromJsonObject(item);
+        console.log(item);
         // When using a <template>'s content, you must clone that in order to
         // use it for adding into a web page.
         let copy = template.cloneNode(true);
+
         let span = copy.querySelector('.course-code');
-        let text = item.code.toString();
-        let textNode = document.createTextNode(text);
+        let textNode = document.createTextNode(item.code);
         span.appendChild(textNode);
+
+        span = copy.querySelector('.course-name');
+        textNode = document.createTextNode(item.name);
+        span.appendChild(textNode);
+
+        span = copy.querySelector('.summary-marks');
+        let mark = document.createElement('mark');
+        let earnedToDate = item.getTotalEarned();
+        let text = `${earnedToDate.toFixed(1)} %`;
+        textNode = document.createTextNode(text);
+        mark.appendChild(textNode);
+        span.appendChild(mark);
         
         // Put this into the container...
         container.appendChild(copy);
