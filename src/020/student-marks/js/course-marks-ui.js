@@ -19,7 +19,25 @@
 */
 
 const populateCourseContent = function(courseData) {
-    console.log(courseData);
+    // get the container for our output
+    let container = document.getElementById('courses');
+    console.log(container);
+
+    // Get the template itself; note that we're getting the stuff inside <template></template>
+    let template = document.getElementById('course-shell').content;
+
+    courseData.forEach(item => {
+        // When using a <template>'s content, you must clone that in order to
+        // use it for adding into a web page.
+        let copy = template.cloneNode(true);
+        let span = copy.querySelector('.course-code');
+        let text = item.code.toString();
+        let textNode = document.createTextNode(text);
+        span.appendChild(textNode);
+        
+        // Put this into the container...
+        container.appendChild(copy);
+    });
 }
 
 export { populateCourseContent }
