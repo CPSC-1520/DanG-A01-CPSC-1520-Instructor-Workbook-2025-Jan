@@ -17,3 +17,9 @@
         </template>
     ```
 */
+
+const populateCourseContent = function(courseData) {
+    console.log(courseData);
+}
+
+export { populateCourseContent }
