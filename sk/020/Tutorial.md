@@ -317,6 +317,38 @@ import { Course, EvaluationItem } from "./course-marks";
 export { populateContent };
 ```
 
+For the individual evaluation items that go in the `<section class="grid"></section>` (the only `<section>`), it's a matter of generating some kind of `<div>` to hold the content.
+
+```js title="course-marks-ui.js"
+// ... inside populateContent() ...
+    let grid = element.querySelector(".grid");
+    course.evaluations.forEach((item) => {
+      grid.appendChild(createEvaluationItemElement(item));
+    });
+// ... remainder of populateContent()
+
+
+/**
+ * Builds a HTMLDivElement with information from an evaluation item.
+ * @param {EvaluationItem} evalItem Some evaluation item associated with a course
+ * @returns {HTMLDivElement}
+ */
+const createEvaluationItemElement = function (evalItem) {
+  let { name, weight, earned, possible } = evalItem;
+  let earnedWeight = evalItem.getWeightedPercent();
+
+  let text = `${
+    earnedWeight === null ? "TBD" : `${earnedWeight} %`
+  } - ${name} (${weight} %)`;
+  let div = document.createElement("div");
+  let textNode = document.createTextNode(text);
+  div.appendChild(textNode);
+
+  return div;
+};
+
+```
+
 ```js title="main.js
 import "@picocss/pico/css/pico.css";
 
