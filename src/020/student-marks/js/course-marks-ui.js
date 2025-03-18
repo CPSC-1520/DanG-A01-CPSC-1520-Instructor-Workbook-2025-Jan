@@ -17,7 +17,7 @@
         </template>
     ```
 */
-import { Course } from './course-marks';
+import { Course, EvaluationItem } from './course-marks';
 
 const populateCourseContent = function(courseData) {
     // get the container for our output
@@ -49,10 +49,54 @@ const populateCourseContent = function(courseData) {
         textNode = document.createTextNode(text);
         mark.appendChild(textNode);
         span.appendChild(mark);
+
+        // Add in all the details of the course's evaluations
+        const evalItemSection = copy.querySelector('.grid');
+        console.log(evalItemSection);
+        item.evaluations.forEach(evalItem => {
+            let element = createElementsForEvaluationItem(evalItem);
+            evalItemSection.appendChild(element);
+        });
         
         // Put this into the container...
         container.appendChild(copy);
     });
 }
+
+const createElementsForEvaluationItem = 
+    function(/** @type {EvaluationItem} */ evalItem) {
+        const div = document.createElement('div');
+
+        // TODO: Fill it with info
+        // Using destructuring syntax
+        let { name, weight, earned, possible, getPercent, getWeightedPercent } = evalItem;
+        /*
+        <div>
+            name - <b>weight</b><br/>
+            <mark>weightedPercent %</mark>
+            <span>(earned / possible = percent %)</span>
+        </div>
+        */
+       let textNode = document.createTextNode(`${name} - `);
+       div.appendChild(textNode);
+       let bold = document.createElement('b');
+       textNode = document.createTextNode(`${weight} %`);
+       bold.appendChild(textNode);
+       div.appendChild(bold);
+       let br = document.createElement('br');
+       div.appendChild(br); 
+
+       let weightedPercent = evalItem.getWeightedPercent();
+       if(weightedPercent === null) {
+        let italic = document.createElement('i');
+        textNode = document.createTextNode('TBD');
+        italic.appendChild(textNode);
+        div.appendChild(italic);
+       } else {
+            // TODO: For those of you who did your homework, you can fill this with code to show the marks
+       }
+
+        return div;
+    };
 
 export { populateCourseContent }
