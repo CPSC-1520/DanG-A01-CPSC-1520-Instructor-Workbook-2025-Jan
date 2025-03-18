@@ -483,16 +483,22 @@
 ## Mar 18 (W10)
 
 - **Today**
-  - [ ] Continue the [Student Marks example/tutorial](./src/020/Tutorial.md)
+  - [ ] Complete the [Student Marks example/tutorial](./src/020/Tutorial.md)
 - **Homework**
 
 
 ## Mar 19
 
 - **Today** *(Online)*
-  - [ ] Complete the [Student Marks example/tutorial](./src/020/Tutorial.md)
-  - [ ] Using `async` and `await` with the Fetch API
   - [ ] Creating `async` functions
+  - [ ] Using `async` and `await` with the fetch API
+  - [ ] Complete the **await-fetch** example/tutorial
+    - Starter Kit *(installs to [`~/src/020/await-fetch`](./src/020/await-fetch/js/main.js))*
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force CPSC-1520/DanG-A01-CPSC-1520-Instructor-Workbook-2025-Jan/sk/020/await-fetch ./src/020/await-fetch
+      ```
+
 - **Homework**
 
 
