@@ -500,6 +500,9 @@
       ```
 
 - **Homework**
+  - [ ] Read the following:
+    - [Introducing asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Introducing)
+    - [How to Use Promises](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Promises)
 
 
 ## Mar 21
