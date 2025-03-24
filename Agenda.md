@@ -520,6 +520,7 @@
 ## Mar 25 (W11)
 
 - **Today**
+  - [ ] Lab 6 Solution
   - [ ] Timers and Intervals in JavaScript
     - Starter Kit *(installs to [`~/src/024`](./src/024/ReadMe.md))*
 
