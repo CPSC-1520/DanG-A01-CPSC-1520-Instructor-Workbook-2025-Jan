@@ -3,7 +3,7 @@
  * @param {HTMLElement} thisDate Container element to show the current date
  */
 const showDate = function(thisDate) {
-    const getDatePortion = function(someDate) {
+    const getDatePortion = function(/** @type {Date} */ someDate) {
         if(someDate instanceof Date) {
             // Build a string with just the date portion
             // YYYY-MM-DD
