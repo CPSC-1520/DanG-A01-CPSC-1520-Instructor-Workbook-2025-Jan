@@ -1,4 +1,8 @@
 /*
+    Version 2.0: 
+    let html = new DomBuilder('h1.intro+p>lorem^ul>li*3>a')
+
+    Version 1.0:
     let footInfo = new DomBuilder();
     footInfo.create('div')
             .add(span, 'Styling by PicoCSS')
