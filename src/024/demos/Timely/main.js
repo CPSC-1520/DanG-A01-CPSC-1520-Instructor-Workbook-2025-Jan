@@ -1,3 +1,7 @@
+/**
+ * showDate() displays the current date in an element on the page
+ * @param {HTMLElement} thisDate Container element to show the current date
+ */
 const showDate = function(thisDate) {
     const getDatePortion = function(someDate) {
         if(someDate instanceof Date) {
@@ -21,9 +25,12 @@ const showDate = function(thisDate) {
 
     console.log('main.js is loaded');
 };
+
+// Get the element & call showDate()
 const output = document.getElementById('thisDate');
 showDate(output);
 
+// Event handler for the "Log Time" button.
 document.querySelector('button').addEventListener('click', function(ev) {
     const rightNow = new Date();
     console.log("The current time is:", rightNow);
