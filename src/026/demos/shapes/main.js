@@ -4,19 +4,27 @@
  * @param {number} width The width of the rectangle
  */
 const Rectangle = class {
-    #created;
-    height;
-    width;
+    // Properties of the instance of Rectangle
+    #created;   // Private property - #
+    height;     // Public property
+    width;      // Public property
 
+    // You can only have one constructor()
     constructor(height, width) {
+        // The job of the constructor is to make sure
+        // all the properties have "meaningful" values
         this.height = height;
         this.width = width;
         this.#created = new Date();
-        Rectangle.#count++;
+        Rectangle.#count++; // Keeping track of how many rectangles I've created
     }
 
-    static #count = 0;
+    // We can use the static keyword for properties
+    // and functions that we want to be "shared"
+    // among all instances
+    static #count = 0;  // Static private property
 
+    // Static public getter
     static get count() {
         return Rectangle.#count;
     }
