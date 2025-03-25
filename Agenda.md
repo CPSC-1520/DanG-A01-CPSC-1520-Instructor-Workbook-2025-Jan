@@ -520,20 +520,35 @@
 ## Mar 25 (W11)
 
 - **Today**
+  - [ ] Lab 6 Solution
   - [ ] Timers and Intervals in JavaScript
+    - Starter Kit *(installs to [`~/src/024`](./src/024/ReadMe.md))*
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force CPSC-1520/DanG-A01-CPSC-1520-Instructor-Workbook-2025-Jan/sk/024 ./src/024
+      ```
+
   - [ ] Classes in JavaScript
+    - Starter Kit *(installs to [`~/src/026`](./src/026/ReadMe.md))*
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force CPSC-1520/DanG-A01-CPSC-1520-Instructor-Workbook-2025-Jan/sk/026 ./src/026
+      ```
+
 - **Homework**
 
 
 ## Mar 26
 
 - **Today** *(Online)*
+  - [ ] Complete unfinished demos
 - **Homework**
 
 
 ## Mar 28
 
 - **Today**
+  - Lab Time
 - **Homework**
 
 ----
