@@ -2,7 +2,7 @@
 
 > ***NOTE:** This agenda is copied from the previous term and needs to be adjusted to this semester. Otherwise, the topics are generally in the correct order.*
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#mar-19).
+> These are my notes on what I plan to teach in each [**upcoming class**](#apr-01-w12).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -556,6 +556,7 @@
 ## Apr 01 (W12)
 
 - **Today**
+  - [ ] Solution to Assignment 2
 - **Homework**
 
 
