@@ -82,9 +82,16 @@ Note also that `<input>` elements have their `.value` as a **string** (even when
 
 | Image | Source | Meta |
 |-------|--------|------|
-|![Taylor Davis](./img/65.jpg) | RandomUser.me |  |
-|![Alfredo Rice](./img/40.jpg) | RandomUser.md |  |
-|![Shawn Collins](./img/83.jpg) | RandomUser.md |  |
-|![Sofia Palmer](./img/45.jpg) | RandomUser.md |  |
-|![Genesis Long](./img/50.jpg) | RandomUser.md |  |
-|![Micheal Fields](./img/72.jpg) | RandomUser.md |  |
+|![Taylor Davis](./img/65.jpg) | RandomUser.me | Taylor Davis |
+|![Alfredo Rice](./img/40.jpg) | RandomUser.me | Alfredo Rice |
+|![Shawn Collins](./img/83.jpg) | RandomUser.me | Shawn Collins |
+|![Sofia Palmer](./img/45.jpg) | RandomUser.me | Sofia Palmer |
+|![Genesis Long](./img/50.jpg) | RandomUser.me | Genesis Long |
+|![Micheal Fields](./img/72.jpg) | RandomUser.me | Micheal Fields |
+|![Katrina Burke](./img/90.jpg) | RandomUser.me | Katrina Burke |
+|![James Reynolds](./img/17.jpg) | RandomUser.me | James Reynolds |
+|![Felix Wallace](./img/31.jpg) | RandomUser.me | Felix Wallace |
+|![Hannah Hall](./img/21.jpg) | RandomUser.me | Hannah Hall |
+|![Tracy Hanson](./img/51.jpg) | RandomUser.me | Tracy Hanson |
+|![Tonya Carpenter](./img/79.jpg) | RandomUser.me | Tonya Carpenter |
+|![Clifton Jacobs](./img/81.jpg) | RandomUser.me | Clifton Jacobs |
