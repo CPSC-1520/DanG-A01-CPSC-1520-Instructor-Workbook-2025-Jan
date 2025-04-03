@@ -563,10 +563,19 @@
 ## Apr 02
 
 - **Today** *(Online)*
+  - [ ] Q'n'A Period
 - **Homework**
 
 
 ## Apr 04
+
+> This lab will be the first one that requires you to use a Node project (instead of Live Server). The packages that we will be using are a bit different from the ones I used in our demos, but the principles are still the same. Also, anything from prior topics (e.g.: loops, arrays, if/else) may also be in that lab (as everything in this course is cumulative).
+> 
+> When marking, I will be doing a code review in addition to the automated tests, so you will need to demonstrate the use of Node and Node Packages as outlined in the lab specs.
+>
+> A Node project is one where there is a `package.json` file that identifies aspects of a JavaScript project (including the third-party libraries listed in the `"dependencies"` and `"devDependencies"` sections).
+> 
+> So, `vite` is an example of a Node package. Thursday's lab will use a different package in place of `vite`, as well as other packages for CSS and validation. Along with this is the whole idea of JavaScript **modules** (where we can have JavaScript code in separate files and we are using `import` and `export` wherever necessary).
 
 - **Today**
   - [ ] **In-Class Lab 7**
