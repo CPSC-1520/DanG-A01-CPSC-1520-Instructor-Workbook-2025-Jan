@@ -593,18 +593,22 @@
 ## Apr 08 (W13)
 
 - **Today**
+  - [ ] Intro: Assignment 3
+  - [ ] Build a Calendar
 - **Homework**
 
 
 ## Apr 09
 
 - **Today** *(Online)*
+  - [ ] Work Period - Assignment 3
 - **Homework**
 
 
 ## Apr 11
 
 - **Today**
+  - [ ] Work Period - Assignment 3
 - **Homework**
 
 ----
@@ -612,12 +616,14 @@
 ## Apr 15 (W14)
 
 - **Today**
+  - [ ] Work Period - Assignment 3
 - **Homework**
 
 
 ## Apr 16
 
 - **Today** *(Online)*
+  - [ ] Work Period - Assignment 3
 - **Homework**
 
 ----
@@ -625,6 +631,7 @@
 ## Apr 22 (W15)
 
 - **Today**
+  - [ ] Work Period - Assignment 3
 - **Homework**
 
 
