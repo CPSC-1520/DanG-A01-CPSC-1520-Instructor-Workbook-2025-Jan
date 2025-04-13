@@ -623,6 +623,7 @@
 
 - **Today**
   - [ ] Work Period - Assignment 3
+  - [ ] Invitation
 - **Homework**
 
 
